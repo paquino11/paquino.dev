@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export function TechStack() {
   return (
     <Card>
-      <CardTitle>Some of the tools I'm capable of using</CardTitle>
+      <CardTitle>Some of the tools I&apos;m capable of using</CardTitle>
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
