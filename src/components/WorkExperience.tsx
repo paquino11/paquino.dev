@@ -1,3 +1,5 @@
+// src/components/WorkExperience.tsx
+
 "use client";
 import React from "react";
 import { WorkExperienceCard } from '@/components/WorkExperienceCard';

@@ -16,7 +16,7 @@ export function WorkExperienceCard({
   className?: string;
 }) {
   return (
-    <CardSpotlight className={`h-96 w-full md:w-[48%] lg:w-[32%] ${className}`}>
+    <CardSpotlight className={`h-96 w-full md:w-[48%] lg:w-[32%] rounded-lg ${className}`}>
       <p className="text-2xl font-bold relative z-20 text-white">
         {company}
       </p>
