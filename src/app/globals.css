@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +31,84 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Add the following custom styles */
+
+.home-page {
+  margin: 24px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+@media (min-width: 640px) {
+  .intro-card {
+    flex-direction: row;
+  }
+}
+
+.intro-card-welcome {
+  margin-top: 75px;
+  font-size: 48px;
+}
+
+.intro-card-body {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 500px;
+}
+
+.intro-card-email {
+  padding-left: 4px;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+.intro-card-email.no-space {
+  padding-left: 0;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.body-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-\[4px\] {
+  gap: 4px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
 }
