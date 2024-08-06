@@ -1,3 +1,5 @@
+// src/components/WorkExperienceCard.tsx
+
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 export function WorkExperienceCard({
@@ -16,15 +18,15 @@ export function WorkExperienceCard({
   className?: string;
 }) {
   return (
-    <CardSpotlight className={`h-96 w-full md:w-[48%] lg:w-[32%] rounded-lg ${className}`}>
-      <p className="text-2xl font-bold relative z-20 text-white">
+    <CardSpotlight className={`rounded-lg ${className}`}>
+      <p className="text-2xl font-bold relative z-20 text-white break-words">
         {company}
       </p>
-      <p className="text-md font-semibold relative z-20 mt-2 text-white">
+      <p className="text-md font-semibold relative z-20 mt-2 text-white break-words">
         {job_title}
       </p>
-      <p className="text-neutral-400 relative z-20 mt-1">{time_period}</p>
-      <div className="text-neutral-200 mt-4 relative z-20">
+      <p className="text-neutral-400 relative z-20 mt-1 break-words">{time_period}</p>
+      <div className="text-neutral-200 mt-4 relative z-20 break-words">
         <ul className="list-none mt-2">
           {description.map((desc, index) => (
             <Step key={index} title={desc} />
@@ -34,7 +36,7 @@ export function WorkExperienceCard({
       <ul className="list-none mt-2">
         {links.map((link, index) => (
           <li key={index}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+            <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline break-words">
               {link.text}
             </a>
           </li>
@@ -48,7 +50,7 @@ const Step = ({ title }: { title: string }) => {
   return (
     <li className="flex gap-2 items-start">
       <CheckIcon />
-      <p className="text-white">{title}</p>
+      <p className="text-white break-words">{title}</p>
     </li>
   );
 };
