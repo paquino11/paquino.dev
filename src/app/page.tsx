@@ -8,7 +8,7 @@ export default function Home() {
     <div className="home-page">
       <Intro />
       <TechStack/>
-      {/* <WorkExperience /> */}
+      <WorkExperience />
     </div>
   );
 }
