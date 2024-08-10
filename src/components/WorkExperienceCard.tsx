@@ -1,9 +1,9 @@
-// src/components/WorkExperienceCard.tsx
-
+import Image from 'next/image';
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 export function WorkExperienceCard({
   company,
+  companyIcon,
   job_title,
   time_period,
   description,
@@ -11,6 +11,7 @@ export function WorkExperienceCard({
   className,
 }: {
   company: string;
+  companyIcon: string; // New prop for company icon path
   job_title: string;
   time_period: string;
   description: string[];
@@ -19,9 +20,12 @@ export function WorkExperienceCard({
 }) {
   return (
     <CardSpotlight className={`rounded-lg ${className}`}>
-      <p className="text-2xl font-bold relative z-20 text-white break-words">
-        {company}
-      </p>
+      <div className="flex items-center gap-2">
+        <Image src={companyIcon} alt={`${company} logo`} width={24} height={24} />
+        <p className="text-2xl font-bold relative z-20 text-white break-words">
+          {company}
+        </p>
+      </div>
       <p className="text-md font-semibold relative z-20 mt-2 text-white break-words">
         {job_title}
       </p>

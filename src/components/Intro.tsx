@@ -16,19 +16,11 @@ export function Intro() {
                     <p className="text-base body-md">email:</p>
                     <a href="mailto:pedroaquinose@gmail.com" className="text-base body-md underline">pedroaquinose (at) gmail (dot) com</a>
                 </div>
-                <div className="flex flex-row">
-                    <p className="text-base body-md">github:</p>
-                    <a target="_blank" className="intro-card-email underline" href="https://github.com/paquino11" rel="noreferrer">paquino</a>
-                </div>
-                <div className="flex flex-row">
-                    <p className="text-base body-md">linkedIn:</p>
-                    <a target="_blank" className="intro-card-email underline" href="https://www.linkedin.com/in/pedrofmaquino/" rel="noreferrer">pedrofmaquino</a>
-                </div>
-                <div className="flex flex-row">
+                {/* <div className="flex flex-row">
                     <a target="_blank" className="intro-card-email underline" href="https://www.paquino.dev/Pedro_Aquino_Resume.pdf" rel="noreferrer">
-                    <p className="text-base body-md">resume</p>
+                        <p className="text-base body-md">resume</p>
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     );

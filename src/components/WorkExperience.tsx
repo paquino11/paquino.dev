@@ -1,5 +1,3 @@
-// src/components/WorkExperience.tsx
-
 "use client";
 import React from "react";
 import { WorkExperienceCard } from '@/components/WorkExperienceCard';
@@ -9,6 +7,7 @@ export function WorkExperience() {
     <div className="flex flex-wrap gap-4 mt-4 px-4 md:px-8 lg:px-36">
         <WorkExperienceCard
           company="Ecarx Group"
+          companyIcon="/ecarx-logo.png" // Path to the company icon in the public folder
           job_title="Software Engineer"
           time_period="March 2023 - Present"
           description={[
@@ -23,6 +22,7 @@ export function WorkExperience() {
         />
         <WorkExperienceCard
           company="Fast Resume AI"
+          companyIcon="/fast-resume-ai-logo.png"
           job_title="Start Up Founder"
           time_period="July 2024 - August 2024"
           description={[
@@ -40,6 +40,7 @@ export function WorkExperience() {
         />
         <WorkExperienceCard
           company="Europe Connected by Talents"
+          companyIcon="/europe-connected-logo.png"
           job_title="Co-Founder and Software Engineer"
           time_period="Feb 2024 - Present"
           description={[
@@ -54,6 +55,7 @@ export function WorkExperience() {
         />
         <WorkExperienceCard
           company="Accenture"
+          companyIcon="/accenture-logo.png"
           job_title="Software Developer"
           time_period="Jan 2020 - Present"
           description={[
