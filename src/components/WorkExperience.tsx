@@ -54,6 +54,21 @@ export function WorkExperience() {
           className="w-full sm:w-full md:w-1/2 lg:w-1/3 flex-grow"
         />
         <WorkExperienceCard
+          company="Melocaixil"
+          companyIcon="/melocaixil.png"
+          job_title="Freelancer"
+          time_period="September 2024"
+          description={[
+            "Designed and developed a web application to manage work orders, clients, and employees using NextJS, Typescript and deployed on Vercel",
+            "Designed and implemented a PostgreSQL database architecture to efficiently handle and store application data, ensuring data integrity and optimal performance.",
+            "Implemented and integrated role-based access control policies to assign appropriate permissions and access levels to different user roles.",
+          ]}
+          links={[
+            // { text: "Ecarx Group Website", url: "https://www.ecarxgroup.com/" },
+          ]}
+          className="w-full sm:w-full md:w-1/2 lg:w-1/3 flex-grow"
+        />
+        <WorkExperienceCard
           company="Accenture"
           companyIcon="/accenture-logo.png"
           job_title="Software Developer"
